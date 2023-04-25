@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
-
 function Home() {
   return (
     <div className={styles.content}>
@@ -54,7 +54,7 @@ function Home() {
           </div>
         </div>
         <div className={`${styles.circle} ${styles.circle_8}`}>
-          <span className={styles.circle_title}><strong>Hospitais e clinicas</strong></span>
+          <Link to='hospitais' className={styles.circle_title}><strong>Hospitais e clinicas</strong></Link>
           <div className={styles.circle_desc}>
             <span>Encontre perto da sua casa!</span>
           </div>
