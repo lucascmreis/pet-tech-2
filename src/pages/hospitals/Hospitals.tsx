@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Hospital, getHospitals } from '../services/hospitals';
-import { GoBack, Icon, ItemTitle, PageContainer, PageTitle } from './styledHospitals';
+import { GoBack, Icon, ItemCard, ItemTitle, PageContainer, PageTitle, PhoneLine } from './styledHospitals';
 
 function Home() {
   const [hospitals, setHospitals] = useState<Hospital[]>([])
@@ -12,15 +12,17 @@ function Home() {
 
   return (
     <PageContainer>
-      <Link to="/"><GoBack title="voltar">{'<'}</GoBack></Link>
+      <Link to="/"><GoBack title="voltar">VOLTAR</GoBack></Link>
       <PageTitle>Hospitais e Clínicas</PageTitle>
-      {hospitals.map(({ address, name }) => {
+      {hospitals.map(({ address, name, phone }) => {
         return (
-          <div key={name} className="p-2 border-black border-2 min-w-[200px] max-w-fit flex flex-col justify-center items-center">
+          <ItemCard key={name} className="">
             <ItemTitle>{name}</ItemTitle>
             <p>{address}</p>
-            <Icon src="phone.png"/>
-          </div>
+            <PhoneLine>
+              <Icon src="phone.png" /> {phone}
+            </PhoneLine>
+          </ItemCard>
         )
       })}
     </PageContainer>
