@@ -1,14 +1,20 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Hospital, getHospitals } from '../services/hospitals';
+import { HospitalRepository, IHospital } from '../services/hospitals';
 import { GoBack, Icon, ItemCard, ItemTitle, PageContainer, PageTitle, PhoneLine } from './styledHospitals';
 
 function Home() {
-  const [hospitals, setHospitals] = useState<Hospital[]>([])
-  useEffect(() => {
-    setHospitals(getHospitals({ page: 1, perPage: 10 }))
+  const [hospitals, setHospitals] = useState<IHospital[]>([])
+  const [hospitalRepository] = useState<HospitalRepository>(() => new HospitalRepository(10))
 
-  }, [])
+  useEffect(() => {
+    async function first() {
+      const firstHospitals = await hospitalRepository.getFirstPage()
+      setHospitals(firstHospitals)
+    }
+    first()
+
+  }, [hospitalRepository])
 
   return (
     <PageContainer>
