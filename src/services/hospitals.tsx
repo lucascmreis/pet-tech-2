@@ -1,11 +1,12 @@
-import { QueryDocumentSnapshot, QuerySnapshot, addDoc, collection, endBefore, getDocs, limit, orderBy, query, startAfter } from "firebase/firestore";
-import { db } from "../../services/firebase";
+import { QueryDocumentSnapshot, QuerySnapshot, addDoc, collection, endBefore, getCountFromServer, getDocs, limit, orderBy, query, startAfter } from "firebase/firestore";
+import { db } from "./firebase";
 
+// todo adicionar timestamp
 export interface IHospital {
   name: string,
   address: string
   phone: string,
-  verified: boolean
+  verified?: boolean
 }
 
 export class HospitalRepository {
@@ -25,6 +26,12 @@ export class HospitalRepository {
     this.last = null
 
     return this.getNextPage()
+  }
+
+  getTotal = async (): Promise<number> => {
+    const hospitalsRef = this.getHospitalRef()
+    const snapshot = await getCountFromServer(hospitalsRef)
+    return snapshot.data().count
   }
 
   getNextPage = async (): Promise<IHospital[]> => {
@@ -60,7 +67,9 @@ export class HospitalRepository {
 
   addHospital = async (newHospital: IHospital) => {
     try {
-      const docRef = await addDoc(collection(db, "hospitals"), {
+
+
+      const docRef = await addDoc(this.getHospitalRef(), {
         ...newHospital, verified: false
       }
       );

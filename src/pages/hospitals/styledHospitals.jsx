@@ -11,6 +11,7 @@ items-center
 pt-3
 sm:pt-5
 bg-blue-bg
+pb-10
 `
 export const PageTitle = tw.h1`
 text-4xl
@@ -18,6 +19,8 @@ font-extrabold
 text-center
 mb-10
 text-slate-200
+mt-10
+sm:mt-0
 `
 
 export const ItemTitle = tw.h2`
@@ -52,6 +55,7 @@ md:top-6
 md:left-5
 text-white
 text-2xl
+underline
 `
 
 export const PhoneLine = tw.div`
@@ -59,3 +63,28 @@ flex
 justify-center
 items-center
 `
+
+export const Button = tw.button`
+rounded
+bg-green-300
+p-2
+border-2
+outline-2
+outline
+mt-2
+`
+
+export const Form = tw.form`
+flex
+flex-col
+p-2
+rounded
+`
+
+export const Input = tw.input`
+p-2
+border-b-2
+`
+
+export const ErrorMessage = tw.p`
+text-pink-500`
