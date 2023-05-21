@@ -16,7 +16,6 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_FIREBASE_APP_ID,
   measurementId: "G-1WDP4M620W"
 };
-console.log(process.env)
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 console.log(process.env)
