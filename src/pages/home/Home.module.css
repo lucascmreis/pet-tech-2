@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height:  100vh;
     flex-direction: column;
     background-image: url("https://i.pinimg.com/originals/1a/d5/be/1ad5becf5d94648a20aabfb93f439a50.jpg");
     background-size: cover;
@@ -14,7 +14,7 @@
 
 .content_main {
     width: 480px;
-    height: 300px;
+    min-height:  300px;
     position: relative;
 }
 
@@ -66,7 +66,7 @@ div.circle_desc {
 
 .circle_1 {
     width: 300px;
-    height: 300px;
+    min-height: 300px;
     top: 0;
     left: -50px;
     background-image: linear-gradient(45deg, rgba(195, 180, 223, .7) 0, rgba(192, 171, 230, .7) 50%);
@@ -75,7 +75,7 @@ div.circle_desc {
 
 .circle_2 {
     width: 240px;
-    height: 240px;
+    min-height: 240px;
     left: -270px;
     top: 30px;
     background-color: rgba(45, 146, 200, .7);
@@ -83,7 +83,7 @@ div.circle_desc {
 
 .circle_3 {
     width: 220px;
-    height: 220px;
+    min-height:  220px;
     top: -140px;
     left: -162px;
     background-color: rgba(160, 224, 163, .7);
@@ -91,7 +91,7 @@ div.circle_desc {
 
 .circle_4 {
     width: 220px;
-    height: 220px;
+    min-height:  220px;
     bottom: -140px;
     left: -162px;
     background-color: rgba(199, 187, 227, .7);
@@ -99,7 +99,7 @@ div.circle_desc {
 
 .circle_5 {
     width: 300px;
-    height: 300px;
+    min-height:  300px;
     top: 0;
     right: -50px;
     /* background-color: #91cfda; */
@@ -109,7 +109,7 @@ div.circle_desc {
 
 .circle_6 {
     width: 240px;
-    height: 240px;
+    min-height:  240px;
     right: -270px;
     top: 30px;
     background-color: rgba(182, 82, 94, .7)
@@ -117,7 +117,7 @@ div.circle_desc {
 
 .circle_7 {
     width: 220px;
-    height: 220px;
+    min-height:  220px;
     top: -140px;
     right: -162px;
     background-color: rgba(142, 143, 234, .7)
@@ -125,7 +125,7 @@ div.circle_desc {
 
 .circle_8 {
     width: 220px;
-    height: 220px;
+    min-height:  220px;
     bottom: -140px;
     right: -162px;
     background-color: rgba(79, 177, 128, .7);
@@ -139,7 +139,7 @@ div.circle_desc {
 
     .content_main {
         width: 100%;
-        height: 100%;
+        min-height:  100%;
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -151,53 +151,54 @@ div.circle_desc {
 
     .circle {
         position: initial;
+        padding: 0 2px;
     }
 
     .circle_1 {
         width: 100%;
-        height: 100%;
+        min-height:  100%;
         border-radius: 0;
     }
 
     .circle_2 {
         width: 100%;
-        height: 100%;
+        min-height:  100%;
         border-radius: 0;
     }
 
     .circle_3 {
         width: 100%;
-        height: 100%;
+        min-height:  100%;
         border-radius: 0;
     }
 
     .circle_4 {
         width: 100%;
-        height: 100%;
+        min-height:  100%;
         border-radius: 0;
     }
 
     .circle_5 {
         width: 100%;
-        height: 100%;
+        min-height:  100%;
         border-radius: 0;
     }
 
     .circle_6 {
         width: 100%;
-        height: 100%;
+        min-height:  100%;
         border-radius: 0;
     }
 
     .circle_7 {
         width: 100%;
-        height: 100%;
+        min-height:  100%;
         border-radius: 0;
     }
 
     .circle_8 {
         width: 100%;
-        height: 100%;
+        min-height:  100%;
         border-radius: 0;
     }
 

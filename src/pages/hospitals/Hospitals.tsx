@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import ReactPaginate from 'react-paginate';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 import { HospitalRepository, IHospital } from '../../services/hospitals';
 import { Button, ErrorMessage, Form, Icon, Input, ItemCard, ItemTitle, PageContainer, PageTitle, PhoneLine } from './styledHospitals';
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
 
 type FormValues = {
   name: string,
@@ -40,22 +40,16 @@ function Home() {
     <div className="bg-primary">
       <Header />
       <PageContainer>
-        <div className="flex items-center pb-6">
-          <h3
-            className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white"
-          >
-            <PageTitle>Hospitais e Clínicas</PageTitle>
-          </h3>
-        </div>
+        <h3
+          className="ml-3 font-body text-2xl font-semibold text-white"
+        >
+          <PageTitle>Hospitais e Clínicas</PageTitle>
+        </h3>
         {hospitals.map(({ address, name, phone }) => {
           return (
-            <ItemCard key={name + address} className="mb-6 flex items-center justify-between border border-grey-lighter px-4 py-4 sm:px-6">
-              <span className="w-9/10 pr-8">
-                <h4 className="font-body text-lg font-semibold text-primary dark:text-white">
-                  <ItemTitle>{name}</ItemTitle>
-                </h4>
-                <p className="font-body font-light text-primary dark:text-white">{address}</p>
-              </span>
+            <ItemCard key={name + address} className="mb-6 flex items-center justify-between border border-grey-lightest bg-grey-lighter px-4 py-4 sm:px-6">
+              <ItemTitle>{name}</ItemTitle>
+              <p className="font-body font-light text-primary dark:text-white">{address}</p>
               <span className="w-1/10">
                 <PhoneLine>
                   <Icon src="phone.png" /> {phone}
