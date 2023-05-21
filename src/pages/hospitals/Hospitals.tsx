@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import ReactPaginate from 'react-paginate';
-import { Link } from 'react-router-dom';
 import { HospitalRepository, IHospital } from '../../services/hospitals';
-import { Button, ErrorMessage, Form, GoBack, Icon, Input, ItemCard, ItemTitle, PageContainer, PageTitle, PhoneLine } from './styledHospitals';
+import { Button, ErrorMessage, Form, Icon, Input, ItemCard, ItemTitle, PageContainer, PageTitle, PhoneLine } from './styledHospitals';
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 type FormValues = {
   name: string,
@@ -29,70 +30,86 @@ function Home() {
 
   }, [hospitalRepository])
 
-  const refresh = async() => {
+  const refresh = async () => {
     const hosps = await hospitalRepository.getFirstPage()
     setHospitals(hosps)
   }
 
 
   return (
-    <PageContainer>
-      <Link to="/"><GoBack title="voltar">VOLTAR</GoBack></Link>
-      <PageTitle>Hospitais e Clínicas</PageTitle>
-      {hospitals.map(({ address, name, phone }) => {
-        return (
-          <ItemCard key={name+address} className="">
-            <ItemTitle>{name}</ItemTitle>
-            <p>{address}</p>
-            <PhoneLine>
-              <Icon src="phone.png" /> {phone}
-            </PhoneLine>
-          </ItemCard>
-        )
-      })}
-      <ReactPaginate
-        breakLabel="..."
-        nextLabel="próximo >"
-        previousLabel="< anterior"
-        onPageChange={() => { }}
-        pageCount={totalPages}
-        renderOnZeroPageCount={null}
-        className="flex gap-2 text-white text-lg"
-        activeClassName='text-green-400 underline'
-      />
+    <div className="bg-primary">
+      <Header />
+      <PageContainer>
+        <div className="flex items-center pb-6">
+          <h3
+            className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white"
+          >
+            <PageTitle>Hospitais e Clínicas</PageTitle>
+          </h3>
+        </div>
+        {hospitals.map(({ address, name, phone }) => {
+          return (
+            <ItemCard key={name + address} className="mb-6 flex items-center justify-between border border-grey-lighter px-4 py-4 sm:px-6">
+              <span className="w-9/10 pr-8">
+                <h4 className="font-body text-lg font-semibold text-primary dark:text-white">
+                  <ItemTitle>{name}</ItemTitle>
+                </h4>
+                <p className="font-body font-light text-primary dark:text-white">{address}</p>
+              </span>
+              <span className="w-1/10">
+                <PhoneLine>
+                  <Icon src="phone.png" /> {phone}
+                </PhoneLine>
+              </span>
+            </ItemCard>
+          )
+        })}
+        <ReactPaginate
+          breakLabel="..."
+          nextLabel="próximo >"
+          previousLabel="< anterior"
+          onPageChange={() => { }}
+          pageCount={totalPages}
+          renderOnZeroPageCount={null}
+          className="flex gap-2 text-white text-lg"
+          activeClassName='text-green-400 underline'
+        />
 
-      <Button
-        onClick={() => dialogRef.current?.showModal()
-        }>Adicionar Hospital ou Clínica</Button>
-      <dialog
-        ref={dialogRef}
-      >
-        <Form
-          onSubmit={handleSubmit(async (hospital) => {
-            await hospitalRepository.addHospital(hospital)
-            dialogRef.current?.close()
-            reset()
-            await refresh()
-          })}
+        <Button
+          className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white"
+          onClick={() => dialogRef.current?.showModal()
+          }>Adicionar Hospital ou Clínica</Button>
+        <dialog
+          ref={dialogRef}
         >
-          <label htmlFor="name">Nome da Clínica ou Hospital*</label>
-          <Input id="name" {...register('name', { required: "Campo obrigatório" })} />
-          {errors.name && <ErrorMessage role="alert">{errors.name?.message}</ErrorMessage>}
-          <label htmlFor="phone">Telefone para Contato*</label>
-          <Input id="phone" {...register('phone', {
-            required: "Campo obrigatório",
-            pattern: /^\(\d{2}\) \d{5}-\d{4}$/
-          })} />
-          {errors.phone && <ErrorMessage role="alert">{errors.phone?.message || 'O telefone tem que ser no formato (99) 99999-9999'}</ErrorMessage>}
-          <label htmlFor="address">Endereço</label>
-          <Input id="address" {...register('address', { required: "Campo obrigatório" })} />
-          {errors.address && <ErrorMessage role="alert">{errors.address?.message}</ErrorMessage>}
-          <Button
-            type="submit"
-          >Salvar</Button>
-        </Form>
-      </dialog>
-    </PageContainer>
+          <Form
+            onSubmit={handleSubmit(async (hospital) => {
+              await hospitalRepository.addHospital(hospital)
+              dialogRef.current?.close()
+              reset()
+              await refresh()
+            })}
+          >
+            <label htmlFor="name">Nome da Clínica ou Hospital*</label>
+            <Input id="name" {...register('name', { required: "Campo obrigatório" })} />
+            {errors.name && <ErrorMessage role="alert">{errors.name?.message}</ErrorMessage>}
+            <label htmlFor="phone">Telefone para Contato*</label>
+            <Input id="phone" {...register('phone', {
+              required: "Campo obrigatório",
+              pattern: /^\(\d{2}\) \d{5}-\d{4}$/
+            })} />
+            {errors.phone && <ErrorMessage role="alert">{errors.phone?.message || 'O telefone tem que ser no formato (99) 99999-9999'}</ErrorMessage>}
+            <label htmlFor="address">Endereço</label>
+            <Input id="address" {...register('address', { required: "Campo obrigatório" })} />
+            {errors.address && <ErrorMessage role="alert">{errors.address?.message}</ErrorMessage>}
+            <Button
+              type="submit"
+            >Salvar</Button>
+          </Form>
+        </dialog>
+      </PageContainer>
+      <Footer />
+    </div>
   );
 }
 
