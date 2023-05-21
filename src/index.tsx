@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
-import { Home, Hospitals, Elderly, Cats, Information, Purchase, Contact, PetsShop } from './pages';
+import { Cats, Contact, Elderly, Home, Hospitals, PetsShop, Purchase } from './pages';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,23 +17,23 @@ const router = createBrowserRouter([
     element: <Hospitals />,
   },
   {
-    path: "/elderly",
+    path: "/idosos",
     element: <Elderly />,
   },
   {
-    path: "/cats",
+    path: "/gatos",
     element: <Cats />,
   },
+  // {
+  //   path: "/informacao",
+  //   element: <Information />,
+  // },
   {
-    path: "/information",
-    element: <Information />,
-  },
-  {
-    path: "/purchase",
+    path: "/comprar",
     element: <Purchase />,
   },
   {
-    path: "/contact",
+    path: "/contato",
     element: <Contact />,
   },
   {

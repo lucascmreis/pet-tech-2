@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
 
-import DialogLogin from '../../components/DialogLogin'
+import DialogLogin from '../../components/DialogLogin';
 
 const textShadow = {
   textShadow: `1px 1px 1px #666,
@@ -59,9 +59,9 @@ function Home() {
         <Link to='contact' className={`${styles.circle} ${styles.circle_2}`}>
           <Content title="Equipe" desc="Quem fez e faz!" />
         </Link>
-        <div className={`${styles.circle} ${styles.circle_3}`} onClick={handleOpen}>
+        {/* <div className={`${styles.circle} ${styles.circle_3}`} onClick={handleOpen}>
           <Content title="LOGIN" desc="Entre aqui ou Cadastre-se!" />
-        </div>
+        </div> */}
         <Link to='purchase' className={`${styles.circle} ${styles.circle_4}`}>
           <Content title="Comprar ou adotar" desc="Como decidir? E o que fazer?" />
         </Link>
@@ -71,9 +71,9 @@ function Home() {
         <Link to='pets-shop' className={`${styles.circle} ${styles.circle_6}`}>
           <Content title="Pet shops" desc="Onde encontrar o que você precisa?" />
         </Link>
-        <Link to='information' className={`${styles.circle} ${styles.circle_7}`}>
+        {/* <Link to='information' className={`${styles.circle} ${styles.circle_7}`}>
           <Content title="Banco de dados" desc="Informações sobre gatos e zoonoses" />
-        </Link>
+        </Link> */}
         <Link to='hospitais' className={`${styles.circle} ${styles.circle_8}`}>
           <Content title="Hospitais e clinicas" desc="Encontre perto da sua casa!" />
         </Link>
