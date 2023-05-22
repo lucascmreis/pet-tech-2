@@ -27,6 +27,7 @@ module.exports = {
       "grey-lighter": "#eceef1",
       "grey-light": "#ccd7e0",
       grey: "#adb6c4",
+      pink: 'rgb(248 113 113)'
     },
 
     border: {

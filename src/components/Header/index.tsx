@@ -40,7 +40,7 @@ const Header = () => {
                             <div
                                 className="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow"
                             ></div>
-                            <Link to="/contact"
+                            <Link to="/contato"
                                 className="relative z-30 block px-2 font-body text-lg font-medium  transition-colors group-hover:text-green text-white dark:group-hover:text-secondary"
                             >Contato</Link>
                         </li>

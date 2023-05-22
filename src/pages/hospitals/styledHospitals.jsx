@@ -66,12 +66,13 @@ items-center
 
 export const Button = tw.button`
 rounded
-bg-green-300
+bg-green
 p-2
 border-2
 outline-2
 outline
 mt-2
+text-white
 `
 
 export const Form = tw.form`
@@ -87,4 +88,5 @@ border-b-2
 `
 
 export const ErrorMessage = tw.p`
-text-pink-500`
+text-pink
+`

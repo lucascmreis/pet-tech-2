@@ -45,16 +45,15 @@ function Home() {
         >
           <PageTitle>Hospitais e Clínicas</PageTitle>
         </h3>
-        {hospitals.map(({ address, name, phone }) => {
+        {hospitals.map(({ address, name, phone, verified }) => {
           return (
             <ItemCard key={name + address} className="mb-6 flex items-center justify-between border border-grey-lightest bg-grey-lighter px-4 py-4 sm:px-6">
               <ItemTitle>{name}</ItemTitle>
               <p className="font-body font-light text-primary dark:text-white">{address}</p>
-              <span className="w-1/10">
-                <PhoneLine>
-                  <Icon src="phone.png" /> {phone}
-                </PhoneLine>
-              </span>
+              <PhoneLine>
+                <Icon src="phone.png" /> {phone}
+              </PhoneLine>
+              {verified? <p>Verificado</p>: <p>Não verificado</p>}
             </ItemCard>
           )
         })}
@@ -70,7 +69,7 @@ function Home() {
         />
 
         <Button
-          className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white"
+          className="ml-3 font-body text-2xl font-semibold text-primary bg-green rounded-xl max-w-[300px]"
           onClick={() => dialogRef.current?.showModal()
           }>Adicionar Hospital ou Clínica</Button>
         <dialog
@@ -100,6 +99,7 @@ function Home() {
               type="submit"
             >Salvar</Button>
           </Form>
+          <Button className='bg-pink' onClick={() => dialogRef.current?.close()}>Fechar</Button>
         </dialog>
       </PageContainer>
       <Footer />

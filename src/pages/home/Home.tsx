@@ -25,7 +25,7 @@ const Content = ({ title = '', desc = "" }) => {
   return (
     <div className="w-[200px]">
       <div className="mb-1 pr-2 pl-2">
-        <h2 className='text-4xl font-semibold text-white text-3xl tracking-tighter font-display'
+        <h2 className='font-semibold text-white text-3xl tracking-tighter font-display'
           style={{ ...textShadow }}
         >
           {title}
@@ -53,19 +53,19 @@ function Home() {
         </h1>
       </div>
       <main className={styles.content_main}>
-        <Link to='elderly' className={`${styles.circle} ${styles.circle_1}`}>
+        <Link to='idosos' className={`${styles.circle} ${styles.circle_1}`}>
           <Content title="Idosos" desc="Cuidados, dicas e soluções para manter a saúde dos idosos no convívio com seus gatos!" />
         </Link>
-        <Link to='contact' className={`${styles.circle} ${styles.circle_2}`}>
+        <Link to='contato' className={`${styles.circle} ${styles.circle_2}`}>
           <Content title="Equipe" desc="Quem fez e faz!" />
         </Link>
         {/* <div className={`${styles.circle} ${styles.circle_3}`} onClick={handleOpen}>
           <Content title="LOGIN" desc="Entre aqui ou Cadastre-se!" />
         </div> */}
-        <Link to='purchase' className={`${styles.circle} ${styles.circle_4}`}>
+        <Link to='comprar' className={`${styles.circle} ${styles.circle_4}`}>
           <Content title="Comprar ou adotar" desc="Como decidir? E o que fazer?" />
         </Link>
-        <Link to='cats' className={`${styles.circle} ${styles.circle_5}`}>
+        <Link to='gatos' className={`${styles.circle} ${styles.circle_5}`}>
           <Content title="Gatos" desc="Cuidados com a saúde do seu bichano! Como evitar contaminações!" />
         </Link>
         <Link to='pets-shop' className={`${styles.circle} ${styles.circle_6}`}>
