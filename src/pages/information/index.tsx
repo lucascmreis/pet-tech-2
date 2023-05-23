@@ -4,7 +4,7 @@ import InformationsBD from '../../components/InformationsBD'
 
 const Information = () => {
     return (
-        <div className="bg-primary">
+        <div className="bg-white">
             <Header />
             <InformationsBD />
             <Footer />

@@ -4,7 +4,7 @@ import Footer from '../../components/Footer'
 
 const Purchase = () => {
     return (
-        <div className="bg-primary">
+        <div className="bg-white">
             <Header />
             <div className="container mx-auto">
                 <div className="pt-16 lg:pt-20">
@@ -13,16 +13,16 @@ const Purchase = () => {
                             className="mb-5 inline-block rounded-full bg-green-light px-2 py-1 font-body text-sm text-green sm:mb-8"
                         >category</span>
                         <h2
-                            className="block font-body text-3xl font-semibold leading-tight text-primary dark:text-white sm:text-4xl md:text-5xl"
+                            className="block font-body text-3xl font-semibold leading-tight text-primary dark:text-primary sm:text-4xl md:text-5xl"
                         >
                             Comprar ou adotar
                         </h2>
                         <div className="flex items-center pt-5 sm:pt-8">
-                            <p className="pr-2 font-body font-light text-primary dark:text-white">
+                            <p className="pr-2 font-body font-light text-primary dark:text-primary">
                                 July 19, 2020
                             </p>
-                            <span className="vdark:text-white font-body text-grey">//</span>
-                            <p className="pl-2 font-body font-light text-primary dark:text-white">
+                            <span className="vdark:text-primary font-body text-grey">//</span>
+                            <p className="pl-2 font-body font-light text-primary dark:text-primary">
                                 4 min read
                             </p>
                         </div>
@@ -85,21 +85,21 @@ const Purchase = () => {
                     </div>
 
                     <div className="flex items-center py-10">
-                        <span className="pr-5 font-body font-medium text-primary dark:text-white"
+                        <span className="pr-5 font-body font-medium text-primary dark:text-primary"
                         >Share</span>
                         <a href="/">
                             <i
-                                className="bx bxl-facebook text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"
+                                className="bx bxl-facebook text-2xl text-primary transition-colors hover:text-secondary dark:text-primary dark:hover:text-secondary"
                             ></i></a>
                         <a href="/">
                             <i
-                                className="bx bxl-twitter pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"
+                                className="bx bxl-twitter pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-primary dark:hover:text-secondary"
                             ></i>
                         </a>
                         <a href="/">
-                            <i className="bx bxl-linkedin pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i></a>
+                            <i className="bx bxl-linkedin pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-primary dark:hover:text-secondary"></i></a>
                         <a href="/">
-                            <i className="bx bxl-reddit pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i></a>
+                            <i className="bx bxl-reddit pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-primary dark:hover:text-secondary"></i></a>
                     </div>
                 </div>
             </div>

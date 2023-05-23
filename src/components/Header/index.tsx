@@ -3,21 +3,19 @@ const Header = () => {
     return (
         <div className="container mx-auto">
             <div className="flex items-center justify-between py-6 lg:py-10">
-                <Link to="/" className="flex items-center">                   
-                    <p
-                        className="hidden font-body text-2xl font-bold text-primary dark:text-white lg:block"
-                    >
-                        Pet tech
-                    </p>
+                <Link to="/" className="flex items-center">
+                    <span className="mr-2">
+                        <img src="/assets/logo.jpeg" width={100} alt="logo" />
+                    </span>                    
                 </Link>
                 <div className="flex items-center lg:hidden">
-                    <i className="bx mr-8 cursor-pointer text-3xl text-primary dark:text-white"></i>
+                    <i className="bx mr-8 cursor-pointer text-3xl text-primary dark:text-primary"></i>
 
                     <svg
                         width="24"
                         height="15"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="fill-current text-primary dark:text-white"
+                        className="fill-current text-primary dark:text-primary"
                     >
                         <g fill-rule="evenodd">
                             <rect width="24" height="3" rx="1.5" />
@@ -34,7 +32,7 @@ const Header = () => {
                                 className="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow"
                             ></div>
                             <Link to="/"
-                                className="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary"
+                                className="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-primary dark:group-hover:text-secondary"
                             >Inicio</Link>
                         </li>
 
@@ -42,10 +40,10 @@ const Header = () => {
                             <div
                                 className="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow"
                             ></div>
-                            <Link to="/contact"                                
-                                className="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary"
+                            <Link to="/contact"
+                                className="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-primary dark:group-hover:text-secondary"
                             >Contato</Link>
-                        </li>                        
+                        </li>
                     </ul>
                 </div>
             </div>

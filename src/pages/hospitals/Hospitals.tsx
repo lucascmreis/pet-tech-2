@@ -37,12 +37,12 @@ function Home() {
 
 
   return (
-    <div className="bg-primary">
+    <div className="bg-white">
       <Header />
       <PageContainer>
         <div className="flex items-center pb-6">
           <h3
-            className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white"
+            className="ml-3 font-body text-2xl font-semibold text-primary dark:text-primary"
           >
             <PageTitle>Hospitais e Clínicas</PageTitle>
           </h3>
@@ -51,10 +51,10 @@ function Home() {
           return (
             <ItemCard key={name + address} className="mb-6 flex items-center justify-between border border-grey-lighter px-4 py-4 sm:px-6">
               <span className="w-9/10 pr-8">
-                <h4 className="font-body text-lg font-semibold text-primary dark:text-white">
+                <h4 className="font-body text-lg font-semibold text-primary dark:text-primary">
                   <ItemTitle>{name}</ItemTitle>
                 </h4>
-                <p className="font-body font-light text-primary dark:text-white">{address}</p>
+                <p className="font-body font-light text-primary dark:text-primary">{address}</p>
               </span>
               <span className="w-1/10">
                 <PhoneLine>
@@ -76,7 +76,7 @@ function Home() {
         />
 
         <Button
-          className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white"
+          className="ml-3 font-body text-2xl font-semibold text-primary dark:text-primary"
           onClick={() => dialogRef.current?.showModal()
           }>Adicionar Hospital ou Clínica</Button>
         <dialog

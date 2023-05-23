@@ -4,7 +4,7 @@ import Posts from '../../components/Posts'
 
 const Elderly = () => {
     return (
-        <div className="bg-primary">
+        <div className="bg-white">
             <Header />
             <Posts title="Idoso" desc="Cuidadaos, dicas e solucoes para manter a saude dos idoso no convivio com seus gatos!" />
             <Footer />
