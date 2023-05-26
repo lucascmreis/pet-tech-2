@@ -37,23 +37,30 @@ function Home() {
 
 
   return (
-    <div className="bg-primary">
+    <div className="bg-white">
       <Header />
       <PageContainer>
-        <h3
-          className="ml-3 font-body text-2xl font-semibold text-white"
-        >
-          <PageTitle>Hospitais e Clínicas</PageTitle>
-        </h3>
-        {hospitals.map(({ address, name, phone, verified }) => {
+        <div className="flex items-center pb-6">
+          <h3
+            className="ml-3 font-body text-2xl font-semibold text-primary dark:text-primary"
+          >
+            <PageTitle>Hospitais e Clínicas</PageTitle>
+          </h3>
+        </div>
+        {hospitals.map(({ address, name, phone }) => {
           return (
-            <ItemCard key={name + address} className="mb-6 flex items-center justify-between border border-grey-lightest bg-grey-lighter px-4 py-4 sm:px-6">
-              <ItemTitle>{name}</ItemTitle>
-              <p className="font-body font-light text-primary dark:text-white">{address}</p>
-              <PhoneLine>
-                <Icon src="phone.png" /> {phone}
-              </PhoneLine>
-              {verified? <p>Verificado</p>: <p>Não verificado</p>}
+            <ItemCard key={name + address} className="mb-6 flex items-center justify-between border border-grey-lighter px-4 py-4 sm:px-6">
+              <span className="w-9/10 pr-8">
+                <h4 className="font-body text-lg font-semibold text-primary dark:text-primary">
+                  <ItemTitle>{name}</ItemTitle>
+                </h4>
+                <p className="font-body font-light text-primary dark:text-primary">{address}</p>
+              </span>
+              <span className="w-1/10">
+                <PhoneLine>
+                  <Icon src="phone.png" /> {phone}
+                </PhoneLine>
+              </span>
             </ItemCard>
           )
         })}
@@ -69,7 +76,7 @@ function Home() {
         />
 
         <Button
-          className="ml-3 font-body text-2xl font-semibold text-primary bg-green rounded-xl max-w-[300px]"
+          className="ml-3 font-body text-2xl font-semibold text-primary dark:text-secondary"
           onClick={() => dialogRef.current?.showModal()
           }>Adicionar Hospital ou Clínica</Button>
         <dialog
