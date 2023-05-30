@@ -4,7 +4,7 @@ const InformationsBD = () => {
             <div className="pb-16 lg:pb-20 pt-10">
                 <div className="flex items-center pb-6">
                     <h3
-                        className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white"
+                        className="ml-3 font-body text-2xl font-semibold text-primary dark:text-primary"
                     >
                         Informações
                     </h3>
@@ -17,11 +17,11 @@ const InformationsBD = () => {
                     >
                         <span className="w-9/10 pr-8">
                             <h4
-                                className="font-body text-lg font-semibold text-primary dark:text-white"
+                                className="font-body text-lg font-semibold text-primary dark:text-primary"
                             >
                                 Zoonoses
                             </h4>
-                            <p className="font-body font-light text-primary dark:text-white">
+                            <p className="font-body font-light text-primary dark:text-primary">
                                 Rapidly build modern websites without ever leaving your HTML.
                             </p>
                         </span>
@@ -36,11 +36,11 @@ const InformationsBD = () => {
                     >
                         <span className="w-9/10 pr-8">
                             <h4
-                                className="font-body text-lg font-semibold text-primary dark:text-white"
+                                className="font-body text-lg font-semibold text-primary dark:text-primary"
                             >
                                 Abrigos
                             </h4>
-                            <p className="font-body font-light text-primary dark:text-white">
+                            <p className="font-body font-light text-primary dark:text-primary">
                                 Framework for Rapid Email Prototyping
                             </p>
                         </span>
@@ -55,11 +55,11 @@ const InformationsBD = () => {
                     >
                         <span className="w-9/10 pr-8">
                             <h4
-                                className="font-body text-lg font-semibold text-primary dark:text-white"
+                                className="font-body text-lg font-semibold text-primary dark:text-primary"
                             >
                                 Alpine.js
                             </h4>
-                            <p className="font-body font-light text-primary dark:text-white">
+                            <p className="font-body font-light text-primary dark:text-primary">
                                 Think of it like Tailwind for JavaScript.
                             </p>
                         </span>
@@ -74,11 +74,11 @@ const InformationsBD = () => {
                     >
                         <span className="w-9/10 pr-8">
                             <h4
-                                className="font-body text-lg font-semibold text-primary dark:text-white"
+                                className="font-body text-lg font-semibold text-primary dark:text-primary"
                             >
                                 PostCSS
                             </h4>
-                            <p className="font-body font-light text-primary dark:text-white">
+                            <p className="font-body font-light text-primary dark:text-primary">
                                 A tool for transforming CSS with JavaScript
                             </p>
                         </span>
@@ -92,11 +92,11 @@ const InformationsBD = () => {
                     >
                         <span className="w-9/10 pr-8">
                             <h4
-                                className="font-body text-lg font-semibold text-primary dark:text-white"
+                                className="font-body text-lg font-semibold text-primary dark:text-primary"
                             >
                                 Zoonoses
                             </h4>
-                            <p className="font-body font-light text-primary dark:text-white">
+                            <p className="font-body font-light text-primary dark:text-primary">
                                 Rapidly build modern websites without ever leaving your HTML.
                             </p>
                         </span>
@@ -111,11 +111,11 @@ const InformationsBD = () => {
                     >
                         <span className="w-9/10 pr-8">
                             <h4
-                                className="font-body text-lg font-semibold text-primary dark:text-white"
+                                className="font-body text-lg font-semibold text-primary dark:text-primary"
                             >
                                 Abrigos
                             </h4>
-                            <p className="font-body font-light text-primary dark:text-white">
+                            <p className="font-body font-light text-primary dark:text-primary">
                                 Framework for Rapid Email Prototyping
                             </p>
                         </span>
@@ -130,11 +130,11 @@ const InformationsBD = () => {
                     >
                         <span className="w-9/10 pr-8">
                             <h4
-                                className="font-body text-lg font-semibold text-primary dark:text-white"
+                                className="font-body text-lg font-semibold text-primary dark:text-primary"
                             >
                                 Alpine.js
                             </h4>
-                            <p className="font-body font-light text-primary dark:text-white">
+                            <p className="font-body font-light text-primary dark:text-primary">
                                 Think of it like Tailwind for JavaScript.
                             </p>
                         </span>
@@ -149,11 +149,11 @@ const InformationsBD = () => {
                     >
                         <span className="w-9/10 pr-8">
                             <h4
-                                className="font-body text-lg font-semibold text-primary dark:text-white"
+                                className="font-body text-lg font-semibold text-primary dark:text-primary"
                             >
                                 PostCSS
                             </h4>
-                            <p className="font-body font-light text-primary dark:text-white">
+                            <p className="font-body font-light text-primary dark:text-primary">
                                 A tool for transforming CSS with JavaScript
                             </p>
                         </span>

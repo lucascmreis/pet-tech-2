@@ -4,25 +4,20 @@ import Footer from '../../components/Footer'
 
 const Purchase = () => {
     return (
-        <div className="bg-primary">
+        <div className="bg-white">
             <Header />
             <div className="container mx-auto">
-                <div className="pt-16 lg:pt-20">
+                <div>
                     <div className="border-b border-grey-lighter pb-8 sm:pb-12">
-                        <span
-                            className="mb-5 inline-block rounded-full bg-green-light px-2 py-1 font-body text-sm text-green sm:mb-8"
-                        >category</span>
-                        <h2
-                            className="block font-body text-3xl font-semibold leading-tight text-primary dark:text-white sm:text-4xl md:text-5xl"
-                        >
+                        <h1 className="pb-8 pt-5 font-body text-4xl font-semibold  text-white dark:text-primary md:text-4xl lg:text-4xl">
                             Comprar ou adotar
-                        </h2>
+                        </h1>
                         <div className="flex items-center pt-5 sm:pt-8">
-                            <p className="pr-2 font-body font-light text-primary dark:text-white">
+                            <p className="pr-2 font-body font-light text-primary dark:text-primary">
                                 July 19, 2020
                             </p>
-                            <span className="vdark:text-white font-body text-grey">//</span>
-                            <p className="pl-2 font-body font-light text-primary dark:text-white">
+                            <span className="vdark:text-primary font-body text-grey">//</span>
+                            <p className="pl-2 font-body font-light text-primary dark:text-primary">
                                 4 min read
                             </p>
                         </div>
@@ -30,77 +25,26 @@ const Purchase = () => {
                     <div
                         className="prose prose max-w-none border-b border-grey-lighter py-8 dark:prose-dark sm:py-12"
                     >
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue ut lectus arcu bibendum at varius vel pharetra vel. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Massa placerat duis ultricies lacus sed turpis tincidunt. Cursus sit amet dictum sit amet justo donec enim. Nec dui nunc mattis enim ut tellus elementum sagittis vitae. Id semper risus in hendrerit gravida rutrum quisque. Posuere ac ut consequat semper viverra nam libero justo laoreet. Turpis cursus in hac habitasse platea.</p>
-
-                        <p>Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Pellentesque massa placerat duis ultricies lacus sed. Interdum velit laoreet id donec ultrices tincidunt arcu non. Id diam maecenas ultricies mi eget mauris. Urna id volutpat lacus laoreet non. Amet est placerat in egestas erat imperdiet sed euismod. Dui sapien eget mi proin sed libero enim sed faucibus. Facilisis mauris sit amet massa vitae. Vitae congue mauris rhoncus aenean vel elit. Ut etiam sit amet nisl. Commodo odio aenean sed adipiscing diam donec adipiscing tristique.</p>
-
-                        <p>Non odio euismod lacinia at quis risus. Elit duis tristique sollicitudin nibh sit amet commodo. Aliquam ultrices sagittis orci a scelerisque purus semper eget duis. Ipsum consequat nisl vel pretium lectus. Pretium vulputate sapien nec sagittis aliquam. Morbi tincidunt augue interdum velit euismod in pellentesque massa. Nullam non nisi est sit.</p>
-
-                        <blockquote>
-                            <p>Note: Some of the earlier articles may be amateur and have information that I wouldn’t necessarily put into an article on the subject if I wrote it today.</p>
-                        </blockquote>
-
-                        <h3 id="lorem-ipsum-dolor-sit-amet">Lorem ipsum dolor sit amet</h3>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet aliquam id diam maecenas ultricies mi eget mauris pharetra. Congue nisi vitae suscipit tellus.</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua:</p>
-
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        </ul>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus viverra adipiscing at in tellus. Proin libero nunc consequat interdum. Sed arcu non odio euismod lacinia at quis.</p>
-
-                        <div className="twitter-card">
-                            <h4 className="twitter-card-title"> "When gone am I, the last of the Jedi will you be. The Force runs strong in your family. Pass on what you have learned."</h4>
-                            <span className="twitter-card-source">— Episode 6, Return of the Jedi</span>
-                            <button className="twitter-card-btn">Share this on Twitter</button>
-                        </div>
-
-                        <p>It’s great that I learned all that, because for my first real job in the industry, I was going to use practically none of it. No Git, no Node, no Sass, no Grunt nor Gulp, no command line, no Bootstrap. Just cold, hard WordPress. Nonetheless, this was going to present a and things to learn.&lt;/p&gt;</p>
-
-                        <h3 id="sed-do-eiusmod-tempor-incididunt">Sed do eiusmod tempor incididunt</h3>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Augue ut lectus arcu bibendum at varius vel. Lacus viverra vitae congue eu consequat ac felis.</p>
-
-                        <p><img src="/assets/img/post-image-01.png" alt="Image" /></p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi. Semper feugiat nibh sed pulvinar.</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel pretium lectus quam id leo in. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget.</p>
-
-                        <h3 id="ullamcorper-dignissim-cras-tincidunt">Ullamcorper dignissim cras tincidunt</h3>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Integer enim neque volutpat ac tincidunt vitae semper quis lectus.</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <a href="/">sed do eiusmod tempor incididunt ut</a> labore et dolore magna aliqua. Leo a diam sollicitudin tempor id eu nisl nunc.</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
+                        <p>
+                            Comparar a compra de gatos com a adoção de gatos é um tema relevante quando se discute a responsabilidade de trazer um novo felino para o lar. Ambas as opções têm suas peculiaridades e é essencial entender os prós e os contras antes de tomar uma decisão.
+                        </p>
+                        <p>
+                            Ao comprar um gato de raça pura de um criador ou loja de animais, você geralmente tem a garantia de conhecer a linhagem, a aparência e algumas características do animal. Além disso, alguns compradores podem ter preferências específicas em termos de temperamento, pelagem ou raça. A compra de gatos pode ser uma opção adequada para aqueles que buscam gatos com traços específicos ou desejam participar de competições de beleza felina.
+                        </p>
+                        <p>
+                            Por outro lado, a adoção de gatos de abrigos ou resgates é uma opção que merece consideração. Existem inúmeros gatos abandonados ou sem lar esperando por uma segunda chance. A adoção de um gato resgatado oferece a oportunidade de dar a ele um lar amoroso e seguro. Os gatos adotados geralmente são esterilizados, vacinados e examinados por um veterinário, o que pode economizar custos iniciais de cuidados de saúde. Além disso, muitos gatos resgatados são misturas de raças ou possuem características únicas, tornando-os igualmente especiais e adoráveis.
+                        </p>
+                        <p>
+                            Ao adotar um gato, você está contribuindo para a redução do número de animais abandonados e auxiliando organizações que trabalham arduamente para cuidar desses animais necessitados. Adicionalmente, a conexão emocional que se estabelece ao adotar um gato pode ser profundamente gratificante, pois você está oferecendo uma nova vida a um ser que precisava desesperadamente de amor e segurança.
+                        </p>
+                        <p>
+                            Independentemente da escolha, é crucial lembrar que trazer um gato para casa requer compromisso e responsabilidade. Todos os gatos precisam de cuidados adequados, incluindo alimentação adequada, atenção veterinária regular, estímulo físico e mental, e um ambiente seguro. É importante dedicar tempo e recursos para fornecer um ambiente saudável e amoroso, independentemente de ter comprado ou adotado um gato.
+                        </p>
+                        <p>
+                            No final das contas, tanto a compra como a adoção de gatos podem ser ótimas opções, dependendo das necessidades e preferências individuais. O importante é garantir que a decisão seja tomada com consciência, considerando o bem-estar do gato e contribuindo para a promoção do cuidado animal responsável.
+                        </p>
                     </div>
 
-                    <div className="flex items-center py-10">
-                        <span className="pr-5 font-body font-medium text-primary dark:text-white"
-                        >Share</span>
-                        <a href="/">
-                            <i
-                                className="bx bxl-facebook text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"
-                            ></i></a>
-                        <a href="/">
-                            <i
-                                className="bx bxl-twitter pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"
-                            ></i>
-                        </a>
-                        <a href="/">
-                            <i className="bx bxl-linkedin pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i></a>
-                        <a href="/">
-                            <i className="bx bxl-reddit pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i></a>
-                    </div>
                 </div>
             </div>
             <Footer />

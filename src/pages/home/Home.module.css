@@ -1,20 +1,21 @@
 .content {
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height:  100vh;
+    min-height: 100vh;
     flex-direction: column;
-    background-image: url("https://i.pinimg.com/originals/1a/d5/be/1ad5becf5d94648a20aabfb93f439a50.jpg");
     background-size: cover;
 }
 
 .content_title {
-    margin-bottom: 100px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content_main {
     width: 480px;
-    min-height:  300px;
+    min-height: 300px;
     position: relative;
 }
 
@@ -38,7 +39,7 @@ div.circle_desc {
     overflow: hidden;
     /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29); */
     /* border-bottom: solid 3px #666; */
-    transition: .4s;  
+    transition: .4s;
     box-shadow: 1px 1px 1px #666,
         1px 1px 1px #666,
         1px 1px 1px #666,
@@ -83,7 +84,7 @@ div.circle_desc {
 
 .circle_3 {
     width: 220px;
-    min-height:  220px;
+    min-height: 220px;
     top: -140px;
     left: -162px;
     background-color: rgba(160, 224, 163, .7);
@@ -91,7 +92,7 @@ div.circle_desc {
 
 .circle_4 {
     width: 220px;
-    min-height:  220px;
+    min-height: 220px;
     bottom: -140px;
     left: -162px;
     background-color: rgba(199, 187, 227, .7);
@@ -99,7 +100,7 @@ div.circle_desc {
 
 .circle_5 {
     width: 300px;
-    min-height:  300px;
+    min-height: 300px;
     top: 0;
     right: -50px;
     /* background-color: #91cfda; */
@@ -109,7 +110,7 @@ div.circle_desc {
 
 .circle_6 {
     width: 240px;
-    min-height:  240px;
+    min-height: 240px;
     right: -270px;
     top: 30px;
     background-color: rgba(182, 82, 94, .7)
@@ -117,7 +118,7 @@ div.circle_desc {
 
 .circle_7 {
     width: 220px;
-    min-height:  220px;
+    min-height: 220px;
     top: -140px;
     right: -162px;
     background-color: rgba(142, 143, 234, .7)
@@ -125,7 +126,7 @@ div.circle_desc {
 
 .circle_8 {
     width: 220px;
-    min-height:  220px;
+    min-height: 220px;
     bottom: -140px;
     right: -162px;
     background-color: rgba(79, 177, 128, .7);
@@ -139,7 +140,7 @@ div.circle_desc {
 
     .content_main {
         width: 100%;
-        min-height:  100%;
+        min-height: 100%;
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -156,49 +157,49 @@ div.circle_desc {
 
     .circle_1 {
         width: 100%;
-        min-height:  100%;
+        min-height: 100%;
         border-radius: 0;
     }
 
     .circle_2 {
         width: 100%;
-        min-height:  100%;
+        min-height: 100%;
         border-radius: 0;
     }
 
     .circle_3 {
         width: 100%;
-        min-height:  100%;
+        min-height: 100%;
         border-radius: 0;
     }
 
     .circle_4 {
         width: 100%;
-        min-height:  100%;
+        min-height: 100%;
         border-radius: 0;
     }
 
     .circle_5 {
         width: 100%;
-        min-height:  100%;
+        min-height: 100%;
         border-radius: 0;
     }
 
     .circle_6 {
         width: 100%;
-        min-height:  100%;
+        min-height: 100%;
         border-radius: 0;
     }
 
     .circle_7 {
         width: 100%;
-        min-height:  100%;
+        min-height: 100%;
         border-radius: 0;
     }
 
     .circle_8 {
         width: 100%;
-        min-height:  100%;
+        min-height: 100%;
         border-radius: 0;
     }
 

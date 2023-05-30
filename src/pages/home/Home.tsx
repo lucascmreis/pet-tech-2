@@ -44,13 +44,14 @@ function Home() {
   const handleOpen = () => setOpen(prev => !prev)
 
   return (
-    <div className={styles.content}>
-      <div className={styles.content_title} style={{ marginBottom: 200 }}>
-        <h1 className='text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10 aos-init aos-animate' style={{ ...textShadow, color: "#fff" }}>
+    <div className={styles.content} style={{backgroundImage: 'url(/assets/backgraound.jpg)'}}>
+      <div className={styles.content_title}>       
+          <img src="/assets/logo.png" width={300} alt="logo" />     
+        <h3 className='text-[2.5rem] text-primary sm:text-4xl.5 xl:text-4xl font-bold leading-tight capitalize aos-init aos-animate' style={{ ...textShadow }}>
           <strong>
-            Idosos e Gatos
+            Idosos & Gatos
           </strong>
-        </h1>
+        </h3>
       </div>
       <main className={styles.content_main}>
         <Link to='idosos' className={`${styles.circle} ${styles.circle_1}`}>
@@ -62,7 +63,7 @@ function Home() {
         {/* <div className={`${styles.circle} ${styles.circle_3}`} onClick={handleOpen}>
           <Content title="LOGIN" desc="Entre aqui ou Cadastre-se!" />
         </div> */}
-        <Link to='comprar' className={`${styles.circle} ${styles.circle_4}`}>
+        <Link to='purchase' className={`${styles.circle} ${styles.circle_4}`}>
           <Content title="Comprar ou adotar" desc="Como decidir? E o que fazer?" />
         </Link>
         <Link to='gatos' className={`${styles.circle} ${styles.circle_5}`}>
