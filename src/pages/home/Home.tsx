@@ -76,7 +76,7 @@ function Home() {
           <Content title="Banco de dados" desc="Informações sobre gatos e zoonoses" />
         </Link> */}
         <Link to='hospitais' className={`${styles.circle} ${styles.circle_8}`}>
-          <Content title="Hospitais e clinicas" desc="Encontre perto da sua casa!" />
+          <Content title="Hospitais e clínicas" desc="Encontre perto da sua casa!" />
         </Link>
       </main>
       <DialogLogin open={open} handleOpen={handleOpen} />
