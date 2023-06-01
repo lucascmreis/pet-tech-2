@@ -5,10 +5,10 @@ const PetsShop = () => {
   return (
     <div className="bg-white">
       <Header />
-      <div className="container mx-auto rounded bg-blue-light shadow">
-        <div className="mb-5 max-w-[600px] mx-auto">
-          <h3 className="font-body text-xl font-light text-primary dark:text-primary">
-            PetLove
+      <div className="container">
+        <div className="mb-5 max-w-[600px] mx-auto rounded bg-blue-light shadow p-2">
+          <h3 className="font-body text-xl font-bold text-primary dark:text-primary">
+            Pet Shop Utinga
           </h3>
           <p className="font-body text-xl font-light text-primary dark:text-primary">
             O Pet Shop Utinga é um estabelecimento em Santo André, São Paulo,
@@ -26,14 +26,13 @@ const PetsShop = () => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29244.19766332244!2d-46.53685769999998!3d-23.6213729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4292745d090d%3A0xce3310e0400af493!2sPet%20Shop%20Utinga!5e0!3m2!1spt-BR!2sbr!4v1685581258049!5m2!1spt-BR!2sbr"
               width="600"
               height="450"
-              style={{ border: 0 }}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </p>
         </div>
-        <div className="mb-5 max-w-[600px] mx-auto  rounded bg-blue-light shadow">
-          <h3 className="font-body text-xl font-light text-primary dark:text-primary">
+        <div className="mb-5 max-w-[600px] mx-auto  rounded bg-blue-light shadow p-2">
+          <h3 className="font-body text-xl font-bold text-primary dark:text-primary">
             Pet Love
           </h3>
           <p className="font-body text-xl font-light text-primary dark:text-primary">
