@@ -71,12 +71,12 @@ function Home() {
           onPageChange={() => { }}
           pageCount={totalPages}
           renderOnZeroPageCount={null}
-          className="flex gap-2 text-white text-lg"
+          className="flex gap-2 text-primary text-lg"
           activeClassName='text-green-400 underline'
         />
 
         <Button
-          className="ml-3 font-body text-2xl font-semibold text-primary dark:text-secondary"
+          className="ml-3 font-body text-2xl bg-blue-light font-semibold text-primary dark:text-secondary"
           onClick={() => dialogRef.current?.showModal()
           }>Adicionar Hospital ou Clínica</Button>
         <dialog
