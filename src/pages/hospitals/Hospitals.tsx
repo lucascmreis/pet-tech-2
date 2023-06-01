@@ -66,7 +66,7 @@ function Home() {
           return (
             <ItemCard
               key={name + address}
-              className="mb-6 flex items-center justify-between border border-grey-lighter px-4 py-4 min-w-[200px] bg-blue-light"
+              className="mb-6 flex items-center justify-between border border-grey-lighter px-4 py-4 bg-blue-light"
             >
               <span>
                 <h4 className="font-body text-lg font-semibold text-primary dark:text-primary">

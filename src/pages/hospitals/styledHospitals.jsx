@@ -34,8 +34,8 @@ p-2
  border-black
  border-2
  min-w-[300px]
- max-w-fit
- flex flex-col
+ flex 
+ flex-col
   justify-center
   items-center
   bg-slate-200
