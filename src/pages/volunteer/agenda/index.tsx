@@ -34,15 +34,14 @@ const Agenda = () => {
       <Header />
       <div className="container mx-auto">
         <div className="py-16 lg:py-20">
-          <h1 className="pt-5 font-body text-4xl font-semibold  text-primary dark:text-primary md:text-4xl lg:text-4xl">
+          <h1 className="pt-5 font-body text-4xl font-semibold  text-primary dark:text-[#ba724e] md:text-4xl lg:text-4xl">
             Selecione uma data para atendimento
           </h1>
 
           <div className="pr-2 pt-3 sm:pt-0">
             <p className="font-body text-xl font-light  text-primary dark:text-primary">
-              Navegue no calendario para encontrar datas disponiveis para o seu
-              atendimento. Em seguida preencha o formulario abaixo com os seus
-              dados
+              Navegue pelo calendário vagas disponíveis para realizar consulta.
+              Em seguida preencha o formulário abaixo com os seus dados
             </p>
           </div>
 
@@ -50,7 +49,7 @@ const Agenda = () => {
             <form className="pt-16" onSubmit={methods.handleSubmit(onSubmit)}>
               <div className="flex flex-col justify-left">
                 <div className="text-primary  dark:text-primary my-3 w-full pt-6  sm:w-1/2 sm:pt-0">
-                  <label className="block pb-3 font-body font-medium  text-primary dark:text-primary">
+                  <label className="block pb-2 font-body font-medium  text-primary dark:text-primary">
                     Data
                   </label>
                   <Calendar name="date" hasCalendarList />
@@ -64,7 +63,7 @@ const Agenda = () => {
                     type="text"
                     id="name"
                     placeholder="Como devo te chamar?"
-                    className="w-full border border-primary bg-grey-lightest px-5 py-4 font-body font-light  text-primary placeholder-primary transition-colors focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary dark:text-primary"
+                    className="w-full border border-secondary rounded-lg placeholder-opacity-50 focus:ring-blue   px-5 py-4 font-body font-light  text-primary placeholder-primary transition-colors focus:border-secondary focus:outline-none  dark:text-primary"
                     {...methods.register("name")}
                   />
                 </div>
@@ -77,7 +76,7 @@ const Agenda = () => {
                     type="email"
                     id="email"
                     placeholder="Escreva seu email aqui"
-                    className="w-full border border-primary bg-grey-lightest px-5 py-4 font-body font-light  text-primary placeholder-primary transition-colors focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary dark:text-primary"
+                    className="w-full border border-secondary rounded-lg placeholder-opacity-50 focus:ring-blue   px-5 py-4 font-body font-light  text-primary placeholder-primary transition-colors focus:border-secondary focus:outline-none  dark:text-primary"
                     {...methods.register("email")}
                   />
                 </div>
@@ -92,12 +91,12 @@ const Agenda = () => {
                   cols={30}
                   rows={9}
                   placeholder="Por favor, descreva aqui as informaçōes do paciente"
-                  className="w-full border border-primary bg-grey-lightest px-5 py-4 font-body font-light  text-primary placeholder-primary transition-colors focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary dark:text-primary"
+                  className="w-full border border-secondary rounded-lg placeholder-opacity-50 focus:ring-blue   px-5 py-4 font-body font-light  text-primary placeholder-primary transition-colors focus:border-secondary focus:outline-none  dark:text-primary"
                   {...methods.register("details")}
                 />
               </div>
 
-              <Button>Confimrar consulta</Button>
+              <Button>Confirmar consulta</Button>
             </form>
           </FormProvider>
         </div>

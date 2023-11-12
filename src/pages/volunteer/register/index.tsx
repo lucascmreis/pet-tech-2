@@ -34,7 +34,7 @@ const Register = () => {
       <Header />
       <div className="container mx-auto">
         <div className="py-16 lg:py-20">
-          <h1 className="pt-5 font-body text-4xl font-semibold  text-primary dark:text-primary md:text-4xl lg:text-4xl">
+          <h1 className="pt-5 font-body text-4xl font-semibold  text-primary dark:text-[#ba724e] md:text-4xl lg:text-4xl">
             Registre um novo horário de atendimento
           </h1>
 

@@ -7,7 +7,7 @@ const Header = () => {
           <span className="flex mr-2 justify-center">
             <img src="/assets/logo.png" width={144} alt="logo" />
           </span>
-          <h3 className="font-semibold text-3xl mb-2 text-[#ba724e]">
+          <h3 className="font-semibold text-3xl mb-2 text-secondary">
             Pet Tech
           </h3>
         </Link>

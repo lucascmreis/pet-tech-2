@@ -11,7 +11,7 @@ const Volunteer = () => {
       <div className="bg-white">
         <Header />
         <div className="container mx-auto">
-          <h1 className="pt-5 font-body text-4xl font-semibold  text-white dark:text-primary md:text-4xl lg:text-4xl">
+          <h1 className="pt-5 font-body text-4xl font-semibold  text-white dark:text-[#ba724e] md:text-4xl lg:text-4xl">
             Veterinário Voluntário
           </h1>
 
