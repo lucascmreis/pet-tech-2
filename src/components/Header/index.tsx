@@ -5,7 +5,7 @@ const Header = () => {
       <div className="flex items-center justify-between py-6 lg:py-10">
         <Link to="/" className="flex items-center">
           <span className="mr-2">
-            <img src="/assets/logo.jpeg" width={100} alt="logo" />
+            <img src="/assets/logo.png" width={240} alt="logo" />
           </span>
         </Link>
         <div className="flex items-center lg:hidden">

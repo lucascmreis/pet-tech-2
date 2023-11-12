@@ -138,6 +138,12 @@ div.circle_desc {
   background-color: rgba(79, 177, 128, 0.7);
 }
 
+.circle_10 {
+  width: 220px;
+  min-height: 220px;
+  background-color: rgba(79, 177, 128, 0.7);
+}
+
 @media (max-width: 700px) {
   .content {
     padding: 0 16px;
