@@ -35,7 +35,7 @@ const Register = () => {
       <div className="container mx-auto">
         <div className="py-16 lg:py-20">
           <h1 className="pt-5 font-body text-4xl font-semibold  text-primary dark:text-primary md:text-4xl lg:text-4xl">
-            Registre um novo horario de atendimento
+            Registre um novo horário de atendimento
           </h1>
 
           <div className="pr-2 pt-3 sm:pt-0">
@@ -78,21 +78,18 @@ const Register = () => {
                 <label className="block pb-3 font-body font-medium  text-primary dark:text-primary">
                   Data
                 </label>
-                {/* <input
-                type="date"
-                className="w-full border border-primary  px-5 py-4 font-body font-light  text-primary placeholder-primary transition-colors focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary dark:text-primary"
-              /> */}
+
                 <Calendar name="date" />
               </div>
               <div className="w-full pt-6  sm:w-1/2 sm:pt-0 my-6">
                 <label className="block pb-3 font-body font-medium  text-primary dark:text-primary">
-                  Onde será o atendimento
+                  Local de atendimento
                 </label>
                 <input
                   type="text"
                   id="location"
                   placeholder="Digite o endereço da clínica"
-                  className="w-full border border-secondary rounded-lg placeholder-opacity-50 focus:ring-blue border-primary  px-5 py-4 font-body font-light  text-primary placeholder-primary transition-colors focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary dark:text-primary"
+                  className="w-full border border-secondary rounded-lg placeholder-opacity-50 px-5 py-4 font-body font-light  text-primary placeholder-primary transition-colors focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary dark:text-primary"
                   {...methods.register("location")}
                 />
               </div>

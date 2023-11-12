@@ -17,11 +17,11 @@ const Volunteer = () => {
 
           <div className="pt-3 sm:w-3/4 mb-4">
             <p className="font-body text-xl font-light text-primary dark:text-primary">
-              Escolha uma opcao
+              Escolha uma opção
             </p>
           </div>
           <div className="flex min-h-full my-12 ">
-            <div className="flex p-6 rounded-3xl bg-[#059669]/50 hover:bg-[#059669]/100  text-center align-center justify-center  w-100 mx-12 ">
+            <div className="flex p-6 rounded-3xl bg-[#85AAC1]/50 hover:bg-[#85AAC1]/100  text-center align-center justify-center  w-100 mx-6 ">
               <Link to="register" className="">
                 <Content
                   title="Veterinário"
@@ -29,7 +29,7 @@ const Volunteer = () => {
                 />
               </Link>
             </div>
-            <div className="flex p-6 rounded-3xl bg-[#0ea5e9]/50 hover:bg-[#0ea5e9]/100  text-center align-center justify-center  w-100 mx-12 ">
+            <div className="flex p-6 rounded-3xl bg-[#FF9966]/50 hover:bg-[#FF9966]/100  text-center align-center justify-center  w-100 mx-6 ">
               <Link to="agenda" className="">
                 <Content
                   title="Paciente"

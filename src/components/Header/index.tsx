@@ -4,9 +4,12 @@ const Header = () => {
     <div className="container mx-auto">
       <div className="flex items-center justify-between py-6 lg:py-10">
         <Link to="/" className="flex items-center">
-          <span className="mr-2">
-            <img src="/assets/logo.png" width={240} alt="logo" />
+          <span className="flex mr-2 justify-center">
+            <img src="/assets/logo.png" width={144} alt="logo" />
           </span>
+          <h3 className="font-semibold text-3xl mb-2 text-[#ba724e]">
+            Pet Tech
+          </h3>
         </Link>
         <div className="flex items-center lg:hidden">
           <i className="bx mr-8 cursor-pointer text-3xl text-primary dark:text-primary"></i>
@@ -26,21 +29,19 @@ const Header = () => {
         </div>
         <div className="hidden lg:block">
           <ul className="flex items-center">
-            <li className="group relative mr-6 mb-1">
-              <div className="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow"></div>
+            <li className="group relative mr-6 mb-1 px-3 py-1 hover:bg-[#FFA274] hover:text-white rounded-full">
               <Link
                 to="/"
-                className="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-primary dark:group-hover:text-secondary"
+                className="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-primary dark:group-hover:text-white"
               >
                 Início
               </Link>
             </li>
 
-            <li className="group relative mr-6 mb-1">
-              <div className="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow"></div>
+            <li className="group relative mr-6 mb-1 px-3 py-1 hover:bg-[#FFA274] hover:text-white rounded-full">
               <Link
                 to="/contact"
-                className="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-primary dark:group-hover:text-secondary"
+                className="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-primary dark:group-hover:text-white"
               >
                 Contato
               </Link>

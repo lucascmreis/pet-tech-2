@@ -12,11 +12,12 @@ const firebaseConfig = {
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
   storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: "9692748933",
+  messagingSenderId: "132618072158",
   appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: "G-1WDP4M620W"
+  //measurementId: "G-1WDP4M620W",
 };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-console.log(process.env)
+console.log(process.env);
+
 export const db = getFirestore(app);

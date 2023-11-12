@@ -32,9 +32,7 @@ export const Content = ({ title = "", desc = "" }) => {
           {title}
         </h2>
       </div>
-      <p className="paragraph text-lg text-white" style={{ ...textShadow }}>
-        {desc}
-      </p>
+      <p className="paragraph text-lg text-primary">{desc}</p>
     </div>
   );
 };
@@ -47,10 +45,11 @@ function Home() {
   return (
     <div
       className={styles.content}
-      style={{ backgroundImage: "url(/assets/backgraound.jpg)" }}
+      style={{ backgroundImage: "url(/assets/bg.png)" }}
     >
       <div className={styles.content_title}>
-        <img src="/assets/logo.png" width={500} alt="logo" />
+        <img src="/assets/logo.png" width={300} alt="logo" />
+        <h2 className="font-semibold text-4xl mb-2 text-[#ba724e]">Pet Tech</h2>
       </div>
       <main className={styles.content_main}>
         <Link to="idosos" className={`${styles.circle} ${styles.circle_1}`}>
@@ -62,9 +61,7 @@ function Home() {
         <Link to="contato" className={`${styles.circle} ${styles.circle_2}`}>
           <Content title="Equipe" desc="Quem fez e faz!" />
         </Link>
-        {/* <div className={`${styles.circle} ${styles.circle_3}`} onClick={handleOpen}>
-          <Content title="LOGIN" desc="Entre aqui ou Cadastre-se!" />
-        </div> */}
+
         <Link to="purchase" className={`${styles.circle} ${styles.circle_4}`}>
           <Content
             title="Comprar ou adotar"
@@ -83,9 +80,7 @@ function Home() {
             desc="Onde encontrar o que você precisa?"
           />
         </Link>
-        {/* <Link to='information' className={`${styles.circle} ${styles.circle_7}`}>
-          <Content title="Banco de dados" desc="Informações sobre gatos e zoonoses" />
-        </Link> */}
+
         <Link to="hospitais" className={`${styles.circle} ${styles.circle_8}`}>
           <Content
             title="Hospitais e clínicas"
