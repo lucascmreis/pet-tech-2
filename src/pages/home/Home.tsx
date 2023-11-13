@@ -49,7 +49,7 @@ function Home() {
     >
       <div className={styles.content_title}>
         <img src="/assets/logo.png" width={200} alt="logo" />
-        <h2 className="font-semibold text-3xl mb- text-[#ba724e]">Pet Tech</h2>
+        <h2 className="font-semibold text-3xl text-[#ba724e]">Pet Tech</h2>
       </div>
       <main className={styles.content_main}>
         <Link to="idosos" className={`${styles.circle} ${styles.circle_1}`}>

@@ -1,9 +1,9 @@
 .content {
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   flex-direction: column;
-  background-size: 35rem;
+  background-size: 30rem;
   background-repeat: no-repeat;
   background-position: bottom -64px left -88px;
 }
@@ -60,10 +60,10 @@ div.circle_desc {
 }
 
 .circle_1 {
-  width: 300px;
-  min-height: 300px;
+  width: 270px;
+  min-height: 270px;
   top: 0;
-  left: -64px;
+  left: -40px;
   background-color: rgba(231, 188, 167);
   z-index: 4;
 }
@@ -93,10 +93,10 @@ div.circle_desc {
 }
 
 .circle_5 {
-  width: 300px;
-  min-height: 300px;
+  width: 270px;
+  min-height: 270px;
   top: 0;
-  right: -50px;
+  right: -30px;
   background-color: rgba(255, 162, 116, 0.8);
   z-index: 5;
 }
@@ -127,7 +127,7 @@ div.circle_desc {
 .circle_9 {
   width: 220px;
   min-height: 220px;
-  bottom: -220px;
+  bottom: -200px;
   right: 130px;
   background-color: rgba(191, 217, 216);
 }
