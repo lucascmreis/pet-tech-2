@@ -20,7 +20,7 @@ const Header = () => {
             xmlns="http://www.w3.org/2000/svg"
             className="fill-current text-primary dark:text-primary"
           >
-            <g fill-rule="evenodd">
+            <g fillRule="evenodd">
               <rect width="24" height="3" rx="1.5" />
               <rect x="8" y="6" width="16" height="3" rx="1.5" />
               <rect x="4" y="12" width="20" height="3" rx="1.5" />

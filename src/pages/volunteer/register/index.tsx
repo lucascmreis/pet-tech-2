@@ -7,7 +7,7 @@ import Calendar from "../../../components/Calendar";
 import { notify } from "../../../utils/toast";
 import Button from "../../../components/Button";
 
-interface IFormInput {
+export interface IVolunteerFormInput {
   name: string;
   email: string;
   date: Date;
@@ -15,11 +15,11 @@ interface IFormInput {
 }
 
 const Register = () => {
-  const methods = useForm<IFormInput>();
+  const methods = useForm<IVolunteerFormInput>();
 
   const navigate = useNavigate();
 
-  const onSubmit: SubmitHandler<IFormInput> = (data) => {
+  const onSubmit: SubmitHandler<IVolunteerFormInput> = (data) => {
     // TODO: handle api call to submit data
     console.log(data);
 
@@ -40,7 +40,7 @@ const Register = () => {
 
           <div className="pr-2 pt-3 sm:pt-0">
             <p className="font-body text-xl font-light  text-primary dark:text-primary">
-              Voce pode escolher uma data disponivel para consultas online ou
+              Por favor, escolha uma data disponível para consultas online ou
               presencial
             </p>
           </div>

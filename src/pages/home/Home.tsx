@@ -26,13 +26,13 @@ export const Content = ({ title = "", desc = "" }) => {
     <div className="w-[200px] justify-center align-middle">
       <div className="mb-1 pr-2 pl-2">
         <h2
-          className="font-semibold text-white text-3xl tracking-tighter font-display"
+          className="font-semibold text-white text-2xl tracking-tighter font-display"
           style={{ ...textShadow }}
         >
           {title}
         </h2>
       </div>
-      <p className="paragraph text-lg text-primary">{desc}</p>
+      <p className="paragraph text-md text-primary">{desc}</p>
     </div>
   );
 };
@@ -48,8 +48,8 @@ function Home() {
       style={{ backgroundImage: "url(/assets/bg.png)" }}
     >
       <div className={styles.content_title}>
-        <img src="/assets/logo.png" width={300} alt="logo" />
-        <h2 className="font-semibold text-4xl mb-2 text-[#ba724e]">Pet Tech</h2>
+        <img src="/assets/logo.png" width={200} alt="logo" />
+        <h2 className="font-semibold text-3xl mb- text-[#ba724e]">Pet Tech</h2>
       </div>
       <main className={styles.content_main}>
         <Link to="idosos" className={`${styles.circle} ${styles.circle_1}`}>

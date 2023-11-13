@@ -39,8 +39,11 @@ const Agenda = () => {
           </h1>
 
           <div className="pr-2 pt-3 sm:pt-0">
-            <p className="font-body text-xl font-light  text-primary dark:text-primary">
-              Navegue pelo calendário vagas disponíveis para realizar consulta.
+            <p className="font-body text-xl font-light m-2 text-primary dark:text-primary">
+              Navegue pelo calendário e encontre vagas disponíveis para realizar
+              sua consulta.
+            </p>
+            <p className="font-body text-xl font-light m-2 text-primary dark:text-primary">
               Em seguida preencha o formulário abaixo com os seus dados
             </p>
           </div>
