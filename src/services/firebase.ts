@@ -17,7 +17,8 @@ const firebaseConfig = {
   //measurementId: "G-1WDP4M620W",
 };
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+
 console.log(process.env);
 
 export const db = getFirestore(app);

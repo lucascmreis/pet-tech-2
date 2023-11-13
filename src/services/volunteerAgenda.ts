@@ -1,100 +1,29 @@
-import {
-  QueryDocumentSnapshot,
-  QuerySnapshot,
-  addDoc,
-  collection,
-  endBefore,
-  getCountFromServer,
-  getDocs,
-  limit,
-  orderBy,
-  query,
-  startAfter,
-} from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
+
 import { db } from "./firebase";
+import { IVolunteerFormInput } from "../pages/volunteer/register";
 
-// todo adicionar timestamp
-export interface IVolunteer {
-  name: string;
-  address: string;
-  email: string;
-  date?: Date;
-}
+// const parseAgendaAdapter = (agenda: Array<any> = []): CalendarItemsProps[] => {
+//   const parsedAgenda = agenda.map((item) => {
+//     const agendaItems: CalendarItemsProps = {
+//       name: item?.name,
+//       id: `${item.name - item.date.toDate()}`,
+//       startDateTime: item.date.toDate(),
+//       endDateTime: item.date.toDate(),
+//     };
+//     return agendaItems;
+//   });
 
-export class VolunteerRepository {
-  last: QueryDocumentSnapshot | null;
-  perPage: number;
+//   return parsedAgenda;
+// };
+export async function getVolunteerAgenda() {
+  const volunteer = collection(db, "volunteer");
+  const snapshot = await getDocs(volunteer);
+  const agenda = snapshot.docs.map((doc) => doc.data());
+  console.log(
+    "🚀 ~ file: volunteerAgenda.ts:23 ~ getVolunteerAgenda ~ agenda:",
+    agenda
+  );
 
-  constructor(perPage: number) {
-    this.last = null;
-    this.perPage = perPage;
-  }
-
-  getVolunteerAgendaRef = () => {
-    return collection(db, "volunteer");
-  };
-
-  // getFirstPage = async (): Promise<IVolunteer[]> => {
-  //   this.last = null;
-
-  //   return this.getNextPage();
-  // };
-
-  getTotal = async (): Promise<number> => {
-    const volunteerRef = this.getVolunteerAgendaRef();
-    const snapshot = await getCountFromServer(volunteerRef);
-    return snapshot.data().count;
-  };
-
-  // getNextPage = async (): Promise<IVolunteer[]> => {
-  //   const hospitalsRef = this.getVolunteerAgendaRef();
-  //   const hospitalQuery = query(
-  //     hospitalsRef,
-  //     orderBy("verified"),
-  //     limit(this.perPage),
-  //     startAfter(this.last)
-  //   );
-  //   const a = await getDocs(hospitalQuery);
-  //   const hospitals = this.parseToHospitals(a);
-
-  //   this.last = a.docs[a.docs.length - 1];
-  //   return hospitals;
-  // };
-
-  // getPreviousPage = async (): Promise<IVolunteer[]> => {
-  //   const hospitalsRef = this.getVolunteerAgendaRef();
-  //   const hospitalQuery = query(
-  //     hospitalsRef,
-  //     orderBy("verified"),
-  //     limit(this.perPage),
-  //     endBefore(this.last)
-  //   );
-  //   const a = await getDocs(hospitalQuery);
-  //   const hospitals = this.parseToHospitals(a);
-
-  //   this.last = a.docs[a.docs.length - 1];
-  //   return hospitals;
-  // };
-
-  // parseToHospitals = (a: QuerySnapshot) => {
-  //   const hospitals: IVolunteer[] = [];
-  //   a.forEach((x) => {
-  //     const { name, address, phone, verified } = x.data();
-  //     console.log(x.data());
-  //     hospitals.push({ name, address, phone, verified });
-  //   });
-  //   return hospitals;
-  // };
-
-  addVolunteerAgenda = async (newVolunteerAgenda: IVolunteer) => {
-    try {
-      const docRef = await addDoc(
-        this.getVolunteerAgendaRef(),
-        newVolunteerAgenda
-      );
-      console.log("Document written with ID: ", docRef.id);
-    } catch (e) {
-      console.error("Error adding document: ", e);
-    }
-  };
+  return agenda; // parseAgendaAdapter(agenda);
 }
